@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Wallet.Common.Entities.Amount;
+using Wallet.Common.Entities;
 
 namespace IWallet.DAL.Contracts
 {
     public interface IWalletRepository
     {
-        public void Add(AmountType type);
+        public void Add(Amount type);
     }
 }

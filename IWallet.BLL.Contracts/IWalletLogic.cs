@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Wallet.Common.Entities.Amount;
+using Wallet.Common.Entities;
 
 namespace IWallet.BLL.Contracts
 {
     public interface IWalletLogic
     {
-        public void Create (AmountType type);
+        public void Create (Amount type);
     }
 }

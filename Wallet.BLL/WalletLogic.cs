@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Wallet.Common.Entities;
-using static Wallet.Common.Entities.Amount;
 
 namespace Wallet.BLL
 {
@@ -18,9 +17,9 @@ namespace Wallet.BLL
             _walletRepository = walletRepository;
         }
 
-        public void Create(Amount.AmountType type)
+        public void Create(Amount amount)
         {
-            _walletRepository.Add(type);
+            _walletRepository.Add(amount);
         }
     }
 }

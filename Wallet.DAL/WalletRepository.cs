@@ -1,17 +1,12 @@
 ﻿using IWallet.DAL.Contracts;
 using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using static Wallet.Common.Entities.Amount;
+using Wallet.Common.Entities;
 
 namespace Wallet.DAL
 {
     public class WalletRepository : IWalletRepository
     {
-        public void Add(AmountType type)
+        public void Add(Amount type)
         {
             string connectionString = "Data Source=DESKTOP-M2QA1DM\\SQLEXPRESS;Initial Catalog=walbase;User ID=User;Password=;Encrypt=False;Trusted_Connection=True";
 

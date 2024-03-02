@@ -1,7 +1,7 @@
 using IWallet.BLL.Contracts;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using static Wallet.Common.Entities.Amount;
+using Wallet.Common.Entities;
 
 namespace UserWallet.Controllers
 {
@@ -14,15 +14,17 @@ namespace UserWallet.Controllers
         public TaskController(IWalletLogic walletlogic)
         {
             _walletlogic = walletlogic;
+            
         }
 
 
 
         // POST: TaskController/Create
         [HttpPost]
-        public void Post([FromBody] AmountType type)
+        public void Post([FromBody] Amount amount)
         {
-            _walletlogic.Create(type);
+            //_walletlogic.Create(type);
+            return;
         }
     }
 }
